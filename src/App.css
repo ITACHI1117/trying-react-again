@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Card styles */
+.centerItems {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #23252c;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 300px;
+  height: 700px;
+  background-color: #1a1b21;
+  border-radius: 10px;
+  object-fit: contain;
+  overflow-y: scroll;
+}
+.card::-webkit-scrollbar {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Woman photo */
+.womanPhoto {
+  height: 80%;
+  width: 100%;
+}
+
+/* Header styles */
+.HeaderCenter {
+  font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.HeaderCenter h1 {
   color: white;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.HeaderCenter h3 {
+  margin-top: 5px;
+  font-weight: 400;
+  color: #f3bf99;
+  font-size: 13px;
+}
+.HeaderCenter p {
+  margin-top: 10px;
+  font-weight: 100;
+  color: white;
+  font-size: 12px;
+}
+.HeaderCenter button {
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 70%;
+  margin-top: 10px;
+  font-weight: 200;
+  font-size: 15px;
+  color: #1a1b21;
+  border: solid white;
+  border-radius: 5px;
+}
+.HeaderCenter button .mailLogo {
+  margin-right: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+/* About and interests styles */
+.about {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  width: 80%;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+.about h1 {
+  font-size: 16px;
+}
+.about p {
+  padding-top: 5px;
+  font-size: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Footer styles */
+
+.footer {
+  width: 300px;
+  height: 50px;
+  background-color: #161619;
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer img {
+  width: 25px;
 }
