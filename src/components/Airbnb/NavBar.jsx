@@ -1,7 +1,14 @@
 import React from "react";
+import airbnb from "../../assets/images/airbnb.png";
 
 function NavBar() {
-  return <div>NavBar</div>;
+  return (
+    <div className="airbnbNav">
+      <nav>
+        <img src={airbnb} alt="" />
+      </nav>
+    </div>
+  );
 }
 
 export default NavBar;
