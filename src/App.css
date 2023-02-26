@@ -199,3 +199,71 @@
   font-size: 18px;
   font-weight: 600;
 }
+
+/* Travel Journal */
+/* nav */
+.TJ {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 55px;
+  background-color: #f55a5a;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.TJ nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.TJ nav img {
+  width: 20px;
+  margin-right: 5px;
+}
+.TJ nav p {
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+/* list */
+.TJList {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.TJContainer {
+  display: flex;
+  font-family: "Inter", sans-serif;
+}
+.TJContainerImg {
+  margin-right: 20px;
+}
+.TJItems {
+  width: 350px;
+  margin-top: 15px;
+}
+.TJLocation {
+  display: flex;
+  align-items: center;
+}
+.TJLocation p {
+  margin-right: 10px;
+  font-weight: 800;
+}
+.TJLocation a {
+  color: gray;
+}
+.TJLocationImg {
+  width: 7px;
+  height: 9px;
+}
+.TJItems h1 {
+  margin-top: 10px;
+}
+.TJItems h5 {
+  margin-top: 10px;
+  font-size: 10px;
+  font-weight: 800;
+}
+.TJItemsP {
+  margin-top: 10px;
+}

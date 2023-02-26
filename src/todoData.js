@@ -1,9 +1,13 @@
+import mount from "./assets/images/mountFuji.png";
+import norway from "./assets/images/norway.png";
+import opera from "./assets/images/opera.png";
+
 const todoData = [
   {
     id: 1,
-    img: "",
+    img: mount,
     location: "Japan",
-    googleMaps: "",
+    googleMaps: "https://www.google.com/maps/@6.4520192,3.4308096,12z",
     locationName: "Mount Fuji",
     date: "12 Jan, 2021 - 24 Jan 2022",
     description:
@@ -11,9 +15,9 @@ const todoData = [
   },
   {
     id: 2,
-    img: "",
+    img: opera,
     location: "Australia",
-    googleMaps: "",
+    googleMaps: "https://www.google.com/maps/@6.4520192,3.4308096,12z",
     locationName: "Syndney Opera House",
     date: "27 May, 2021 - 0 Jun 2021",
     description:
@@ -21,12 +25,14 @@ const todoData = [
   },
   {
     id: 3,
-    img: "",
+    img: norway,
     location: "Norway",
-    googleMaps: "",
+    googleMaps: "https://www.google.com/maps/@6.4520192,3.4308096,12z",
     locationName: "Geirangerfjord",
     date: "01 Oct, 2021 - 18 Nov, 2021",
     description:
       "The Geiranger Fjord is a fjord in the Sunnmøre region of Møre og Romsdal county, Norway. It is located entirely in the Stranda Municipality.",
   },
 ];
+
+export default todoData;
