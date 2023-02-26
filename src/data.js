@@ -15,6 +15,7 @@ const data = [
     },
     location: "Sold Out",
     openspots: 0,
+    country: "USA",
   },
   {
     id: 2,
@@ -28,6 +29,7 @@ const data = [
     },
     location: "Online",
     openspots: 27,
+    country: "USA",
   },
   {
     id: 3,
@@ -41,6 +43,7 @@ const data = [
     },
     location: "Online",
     openspots: 38,
+    country: "USA",
   },
 ];
 

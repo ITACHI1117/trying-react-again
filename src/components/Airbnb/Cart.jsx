@@ -1,26 +1,27 @@
-import React from "react";
-import cartImg1 from "../../assets/images/cartImg1.png";
+import React, { useEffect } from "react";
 import star from "../../assets/images/star.png";
+import { useState } from "react";
 
 function Cart(props) {
-  //   let badgeText;
-  //   const changeText = () => {
-  //     if (props.openSpots === 0) {
-  //       badgeText == "SOLD OUT";
-  //     } else if (props.location === "Online") {
-  //       badgeText == "ONLINE";
-  //     }
-  //     changeText();
-  //   };
+  const [badgeText, setBadgeText] = useState("");
+
+  useEffect(() => {
+    if (props.openspots === 0) {
+      setBadgeText("SOLD OUT");
+    } else if (props.location === "Online") {
+      setBadgeText("ONLINE");
+    }
+  }, [props.location, props.openspots]);
+
   return (
     <div className="oneCart">
-      {props.openSpots === 0 && <div className="cardBadge">SOLD OUT</div>}
-      <img src={props.img} alt="" />
+      {badgeText && <div className="cardBadge">{badgeText}</div>}
+      <img src={props.coverImg} alt="" />
       <div className="stars">
         <img src={star} alt="" />
-        <p>{props.rating}</p>
+        <p>{props.stats.rating}</p>
         <p>
-          ({props.reviewCount}).{props.country}
+          ({props.stats.reviewCount}).{props.country}
         </p>
       </div>
       <div className="lesson">
