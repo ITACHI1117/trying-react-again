@@ -1,10 +1,10 @@
 import React from "react";
 import memeImg from "../../assets/images/memeimg.png";
 
-function Meme() {
+function Meme({ url }) {
   return (
     <div className="Meme">
-      <img src={memeImg} alt="" />
+      <img className="memeImg" src={url ? url : memeImg} alt="" />
     </div>
   );
 }
