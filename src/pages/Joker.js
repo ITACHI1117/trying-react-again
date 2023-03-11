@@ -5,7 +5,8 @@ import Navbar from "../components/Joker/Navbar";
 import { DataProvider } from "../context/DataContext";
 
 function Joker() {
-  // I didnt pass data using props instead i used Context
+  // I didn't pass data using props instead i used Context
+  // Note to self: not all the data need s to be in the context
   return (
     <>
       <DataProvider>
