@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { useContext } from "react";
+import DataContext from "../../context/DataContext";
 
-function Form({ getMemeImage }) {
+function Form() {
   const [formData, setFormData] = useState({ firstName: "", lastName: "" });
+  const { getMemeImage } = useContext(DataContext);
 
   const handleChange = (event) => {
     setFormData((prevFormData) => {

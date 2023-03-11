@@ -1,10 +1,13 @@
 import React from "react";
-import memeImg from "../../assets/images/memeimg.png";
+import { useContext } from "react";
+import DataContext from "../../context/DataContext";
 
-function Meme({ url }) {
+function Meme() {
+  const { url } = useContext(DataContext);
+  console.log(url);
   return (
     <div className="Meme">
-      <img className="memeImg" src={url ? url : memeImg} alt="" />
+      <img className="memeImg" src={url} alt="" />
     </div>
   );
 }
