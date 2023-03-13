@@ -6,6 +6,7 @@ import TJournal from "./pages/TJournal";
 import Joker from "./pages/Joker";
 import UseCallback from "./components/Hooks/UseCallback";
 import UseMemo from "./components/Hooks/UseMemo";
+import UseRef from "./components/Hooks/UseRef";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/joker" element={<Joker />} />
         <Route path="/callback" element={<UseCallback />} />
         <Route path="/memo" element={<UseMemo />} />
+        <Route path="/ref" element={<UseRef />} />
       </Routes>
     </Router>
   );
