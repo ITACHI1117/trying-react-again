@@ -9,6 +9,7 @@ import UseMemo from "./components/Hooks/UseMemo";
 import UseRef from "./components/Hooks/UseRef";
 import UseReduser from "./components/Hooks/UseReduser";
 import UseLayoutEffect from "./components/Hooks/UseLayoutEffect";
+import UseImperativeHandle from "./components/Hooks/UseImperativeHandle";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/ref" element={<UseRef />} />
         <Route path="/reduser" element={<UseReduser />} />
         <Route path="/layoutEffect" element={<UseLayoutEffect />} />
+        <Route path="/imperativeHandle" element={<UseImperativeHandle />} />
       </Routes>
     </Router>
   );
