@@ -7,6 +7,7 @@ import Joker from "./pages/Joker";
 import UseCallback from "./components/Hooks/UseCallback";
 import UseMemo from "./components/Hooks/UseMemo";
 import UseRef from "./components/Hooks/UseRef";
+import UseReduser from "./components/Hooks/UseReduser";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/callback" element={<UseCallback />} />
         <Route path="/memo" element={<UseMemo />} />
         <Route path="/ref" element={<UseRef />} />
+        <Route path="/reduser" element={<UseReduser />} />
       </Routes>
     </Router>
   );
