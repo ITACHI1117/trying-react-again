@@ -8,6 +8,7 @@ import UseCallback from "./components/Hooks/UseCallback";
 import UseMemo from "./components/Hooks/UseMemo";
 import UseRef from "./components/Hooks/UseRef";
 import UseReduser from "./components/Hooks/UseReduser";
+import UseLayoutEffect from "./components/Hooks/UseLayoutEffect";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/memo" element={<UseMemo />} />
         <Route path="/ref" element={<UseRef />} />
         <Route path="/reduser" element={<UseReduser />} />
+        <Route path="/layoutEffect" element={<UseLayoutEffect />} />
       </Routes>
     </Router>
   );
